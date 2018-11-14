@@ -15,7 +15,6 @@ body {
     font-weight: 400;
     font-size: 20px;
     text-rendering: optimizeLegibility;
-    overflow-x: hidden; 
 }
 
 /* ------ REUSABLE CONTENT ----- */
@@ -25,3 +24,13 @@ body {
     margin: 0 auto; 
 }
 
+/* ----- HEADER ------- */
+
+header {
+    background-image:   linear-gradient(rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.6)), url('img/hero-test.jpg');
+    height: 100vh;
+    background-size: cover; 
+    background-position: center;
+    position: relative;
+}
+*/

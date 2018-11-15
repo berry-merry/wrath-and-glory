@@ -37,51 +37,60 @@ header {
 /* ----- MAIN NAV ----- */
 /* Lesson taken: the display property cannot be animated and just by having it in your CSS it overrides the visibility and opacity transitions.
 But an element with visibility: hidden takes up the space in DOM when the one with display: none doesn't. So? Use position:absolute - absolutely positioned elements are no longer part of the layout - parent items have no idea how big absolutely-positioned child elements are*/
-
-.main-nav {
+nav {
+    background-color: #343e4a;
+}
+.main-nav-box {
     float: right;
-/*    background-color: rgba(70, 70, 70, 0.6);*/
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.15) 25%, rgba(255, 255, 255, 0.15) 75%, rgba(255, 255, 255, 0) 100%);
-   
 }
 
-.main-nav li {
+.main-nav-box li {
     display: block;
     float: left;
     position: relative;
-    padding: 1rem 2rem;
+    padding: 1rem 0; 
 }
 
-.main-nav li a {
+.main-nav-box li a {
      text-decoration: none;
-     font-size: 140%;
+     font-size: 110%;
      color: #fff;
+     padding: 0 2rem;
+
 }
 
-.main-nav li:hover {
+.main-nav-box li:hover {
   cursor: pointer;
 }
 
-.main-nav .dropdown {
+.main-nav-box .dropdown {
   position: absolute;
   visibility: hidden;
   opacity: 0;
-  transition: opacity 0.4s, visibility 0.4s;
+  transition: opacity 0.3s, visibility 0.3s;
   margin-top: 1rem; /* because .main-nav li padding is 1rem - otherwise they overlap */
   width: 100%;
+  background-color: #343e4a;
 }
 
-.main-nav li:last-child .dropdown:last-child {
+.main-nav-box li .dropdown:last-child {
+    width: 150%;
+}
+.main-nav-box li:last-child .dropdown:last-child {
     width: 200%;
 }
 
-.main-nav li:hover > .dropdown {
+.main-nav-box li:hover > .dropdown {
   visibility: visible;
   opacity: 1;
 }
 
-.main-nav li .dropdown li {  
+.main-nav-box li .dropdown li {  
   width: 100%; /*if they don't take up 100%, they collapse to one line */    
   padding: 0.5rem;
+}
+
+.main-nav-box li:hover {
+    background-color: #707780;
 }
 

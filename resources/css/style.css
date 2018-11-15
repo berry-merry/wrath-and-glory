@@ -27,7 +27,7 @@ body {
 /* ----- HEADER ------- */
 
 header {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.13), rgba(0, 0, 0, 0.6)), url('img/hero-test.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/hero-test.jpg');
     height: 100vh;
     background-size: cover; 
     background-position: center;
@@ -36,11 +36,26 @@ header {
 
 /* ----- MAIN NAV ----- */
 /* Lesson taken: the display property cannot be animated and just by having it in your CSS it overrides the visibility and opacity transitions.
-But an element with visibility: hidden takes up the space in DOM when with display: none doesn't. So? Use position:absolute - absolutely positioned elements are no longer part of the layout - parent items have no idea how big absolutely-positioned child elements are*/
+But an element with visibility: hidden takes up the space in DOM when the one with display: none doesn't. So? Use position:absolute - absolutely positioned elements are no longer part of the layout - parent items have no idea how big absolutely-positioned child elements are*/
+
+.main-nav {
+    float: right;
+/*    background-color: rgba(70, 70, 70, 0.6);*/
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.15) 25%, rgba(255, 255, 255, 0.15) 75%, rgba(255, 255, 255, 0) 100%);
+   
+}
 
 .main-nav li {
-    display: inline-block;
+    display: block;
+    float: left;
     position: relative;
+    padding: 1rem;
+}
+
+.main-nav li a {
+     text-decoration: none;
+     font-size: 140%;
+     color: #fff;
 }
 
 .main-nav li:hover {
@@ -52,6 +67,8 @@ But an element with visibility: hidden takes up the space in DOM when with displ
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.4s, visibility 0.4s;
+  margin-top: 1rem; /* because .main-nav li padding is 1rem - otherwise they overlap */
+  width: 100%;
 }
 
 .main-nav li:hover > .dropdown {
@@ -60,6 +77,7 @@ But an element with visibility: hidden takes up the space in DOM when with displ
 }
 
 .main-nav li .dropdown li {  
-  width: 100%;
+  width: 100%; /*if they don't take up 100%, they collapse to one line */    
+  padding: 0.5rem;
 }
 

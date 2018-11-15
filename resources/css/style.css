@@ -49,7 +49,7 @@ But an element with visibility: hidden takes up the space in DOM when the one wi
     display: block;
     float: left;
     position: relative;
-    padding: 1rem;
+    padding: 1rem 2rem;
 }
 
 .main-nav li a {
@@ -69,6 +69,10 @@ But an element with visibility: hidden takes up the space in DOM when the one wi
   transition: opacity 0.4s, visibility 0.4s;
   margin-top: 1rem; /* because .main-nav li padding is 1rem - otherwise they overlap */
   width: 100%;
+}
+
+.main-nav li:last-child .dropdown:last-child {
+    width: 200%;
 }
 
 .main-nav li:hover > .dropdown {

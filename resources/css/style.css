@@ -11,7 +11,7 @@ html,
 body {
     background-color: #fff;
     color: #555;
-    font-family: 'Alegreya SC', serif;
+    font-family: monospace;
     font-weight: 400;
     font-size: 20px;
     text-rendering: optimizeLegibility;
@@ -37,60 +37,61 @@ header {
 /* ----- MAIN NAV ----- */
 /* Lesson taken: the display property cannot be animated and just by having it in your CSS it overrides the visibility and opacity transitions.
 But an element with visibility: hidden takes up the space in DOM when the one with display: none doesn't. So? Use position:absolute - absolutely positioned elements are no longer part of the layout - parent items have no idea how big absolutely-positioned child elements are*/
-nav {
-    background-color: #343e4a;
+
+a {
+  text-decoration: none;
 }
+
+nav {
+	background: #576574;
+}
+
 .main-nav-box {
-    float: right;
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
 }
 
 .main-nav-box li {
-    display: block;
-    float: left;
-    position: relative;
-    padding: 1rem 0; 
+	color: #fff;
+    background: #576574;
+	display: block;
+	float: left;
+	padding: 1rem;
+	position: relative;
+	text-decoration: none;
+    transition-duration: 0.5s;
 }
-
+  
 .main-nav-box li a {
-     text-decoration: none;
-     font-size: 110%;
-     color: #fff;
-     padding: 0 2rem;
-
+  color: #fff;
 }
 
-.main-nav-box li:hover {
-  cursor: pointer;
+.main-nav-box li .dropdown {
+	visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+	position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;  /* because .main-nav li padding is 1rem - otherwise they overlap */
+	left: 0;
+    display: none;
 }
 
-.main-nav-box .dropdown {
-  position: absolute;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.3s, visibility 0.3s;
-  margin-top: 1rem; /* because .main-nav li padding is 1rem - otherwise they overlap */
-  width: 100%;
-  background-color: #343e4a;
-}
-
-.main-nav-box li .dropdown:last-child {
-    width: 150%;
-}
-.main-nav-box li:last-child .dropdown:last-child {
-    width: 200%;
-}
-
-.main-nav-box li:hover > .dropdown {
+.main-nav-box li:hover > .dropdown,
+.main-nav-box li .dropdown:hover {
   visibility: visible;
   opacity: 1;
+  display: block;
 }
 
-.main-nav-box li .dropdown li {  
-  width: 100%; /*if they don't take up 100%, they collapse to one line */    
-  padding: 0.5rem;
+.main-nav-box li .dropdown li {
+	clear: both;
+    width: 100%; /* if they don't take up 100%, they collapse to one line  */
 }
 
 .main-nav-box li:hover {
-    background-color: #707780;
+    background-color: #ff9f43;
 }
+
 

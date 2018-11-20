@@ -189,6 +189,37 @@ nav {
 
 /* ------- ABOUT-CAMPAIGN --------- */
 
-.about-campaign-section {
+.about-campaign-section span {
+    font-weight: 500;
+}
 
+.about-campaign-section p {
+    text-align: center;
+}
+
+/* ------- PHOTOS ----------- */
+
+.photos-section {
+    padding: 0;
+}
+
+.photos-row {
+    list-style: none;
+    width: 100%;
+}
+
+.photos-row li {
+    width: 25%;
+    float: left;
+}
+
+.photo-figure {
+    width: 100%;
+    overflow: hidden;
+}
+
+.photo-figure img {
+    width: 100%;
+    height: auto;
+    transform: scale(1.15); /* because there was whitespace between each row */
 }

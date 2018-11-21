@@ -28,7 +28,7 @@ body {
 }
 
 section {
-    padding: 100px 0; /* has padding not margin because some of sections' backgrounds are coloured */
+    padding-top: 100px;
 }
 
 /*------- BUTTONS -------*/
@@ -189,6 +189,7 @@ nav {
 
 /* ------- ABOUT-CAMPAIGN --------- */
 
+
 .about-campaign-section span {
     font-weight: 500;
 }
@@ -198,28 +199,47 @@ nav {
 }
 
 /* ------- PHOTOS ----------- */
-
-.photos-section {
-    padding: 0;
+.personae-section .col {
+    margin: 0;
+}
+.portret {
+    position: relative; 
+    transform: scale(1.01);  
 }
 
-.photos-row {
-    list-style: none;
+.portret:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.45);
+    opacity: 0.3;
+    transition: opacity 0.6s ease;
+    transform: scale(0.985); 
+}
+
+.portret .text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* relative to its width and height */  
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+.portret:hover:before {
+    opacity: 1;    
+}
+.portret:hover .text {
+    opacity: 1;
+}
+
+.portret img {
     width: 100%;
 }
 
-.photos-row li {
-    width: 25%;
-    float: left;
-}
-
-.photo-figure {
-    width: 100%;
-    overflow: hidden;
-}
-
-.photo-figure img {
-    width: 100%;
-    height: auto;
-    transform: scale(1.15); /* because there was whitespace between each row */
+.portret .text h1 {
+    color: rgb(255, 255, 255);
 }

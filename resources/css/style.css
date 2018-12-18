@@ -19,9 +19,9 @@ body {
     font-size: 1.1rem;
     text-rendering: optimizeLegibility;
 }
-
-/* ------ REUSABLE CONTENT ----- */
-
+/*--------------------------------*/
+/* ------ REUSABLE CONTENT ------ */
+/*--------------------------------*/
 .row { 
     max-width: 1140px; 
     margin: 0 auto; 
@@ -101,7 +101,6 @@ h3 {
     font-weight: 500;
     text-align: center;
 }
-
 
 /* -------- HEADER ------- */
 
@@ -198,7 +197,15 @@ nav {
 }
 
 .about-campaign-section p {
+    padding-top: 30px;
     text-align: center;
+}
+
+.about-campaign-section img {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
 }
 
 /* ------- PHOTOS ----------- */
@@ -298,4 +305,31 @@ nav {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+}
+
+/* -------------- GILEAD -------------------*/
+
+.gilead-section {
+    background-image: linear-gradient(rgba(87, 80, 80, 0.377), rgba(0, 0, 0, 0.4)), url('img/gilead.jpg');
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.gilead-section h2 {
+    color: #fff;
+}
+.gilead-section p {
+    text-align: center;
+    color: #fff;
+}
+
+/* ---------FOOTER ---------- */
+
+footer {
+    background-color: #576574;
+    height: 
 }

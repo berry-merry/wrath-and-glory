@@ -18,6 +18,7 @@ body {
     font-weight: 400;
     font-size: 1.1rem;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 /*--------------------------------*/
 /* ------ REUSABLE CONTENT ------ */
@@ -25,6 +26,7 @@ body {
 .row { 
     max-width: 1140px; 
     margin: 0 auto; 
+    padding: 0 2%;
 }
 
 section {
@@ -73,7 +75,7 @@ h1 {
     margin-top: 0;
     margin-bottom: 20px;
     color: #fff;
-    font-size: 240%;
+    font-size: 3.2vw;
     word-spacing: 3px;
     letter-spacing: 2px;
 }
@@ -104,12 +106,13 @@ h3 {
 
 /* -------- HEADER ------- */
 
+
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('img/hero.png');
     height: 100vh;
     background-repeat: no-repeat;
-    background-size: contain; 
-    background-position: right bottom;
+    background-size: cover; 
+    background-position: center;
     position: relative;
     background-attachment: fixed;
 }
@@ -123,7 +126,7 @@ header {
 
 
 .hero-text-box h1 {
-    line-height: 125%;
+    line-height: 120%;
     text-shadow: 0px 0.5px 0.5px rgba(87,101,116,0.5);
 }
 
@@ -311,7 +314,6 @@ nav {
 
 .gilead-section {
     background-image: linear-gradient(rgba(87, 80, 80, 0.377), rgba(0, 0, 0, 0.4)), url('img/gilead.jpg');
-    height: 40vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

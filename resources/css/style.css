@@ -18,7 +18,7 @@ body {
     font-weight: 400;
     font-size: 1.1rem;
     text-rendering: optimizeLegibility;
-    overflow-x: hidden;
+   
 }
 /*--------------------------------*/
 /* ------ REUSABLE CONTENT ------ */
@@ -213,9 +213,6 @@ nav {
 
 /* ------- PHOTOS ----------- */
 
-.personae-section {
-    overflow-x: hidden;
-}
 
 .personae-section .row {
     max-width: 100%;
@@ -230,8 +227,8 @@ nav {
 /* Lesson taken:
     If you put opacity and dark background directly on the .portret container (or even on the image itself!) it will work -
     but also it will affect text within.
-    create a dummy element - image it as a additional layer - position it as abolute and do things!
-    You also can't put linear-gradient on <img> tag, you need to use url() in stylesheet.*/
+    create a dummy element - place it as an additional layer - position it abolute and do things!
+    You also can't put linear-gradient on a <img> tag, you need to use url() in stylesheet.*/
 .portret:before {
     content: '';
     position: absolute;
@@ -353,7 +350,7 @@ footer .quick-links ol {
 }
 
 footer .quick-links a, footer p {
-    color: #333b43;
+    color: #1d2226;
 }
 
 footer .quick-links li {

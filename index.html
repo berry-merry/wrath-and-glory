@@ -15,10 +15,10 @@
     
     <body>
         <header>
-            <nav>
+            <nav class="sticky">
                 <div class="row">
                     <ul class="main-nav-box">
-                        <li><a href="#gilead">Gilead</a></li>
+                        <li id="gilead"><a href="#gilead">Gilead</a></li>
                         <li><a href="#personae">Dramatis Personae</a>
                             <ul class="dropdown">
                                 <li><a href="#">Solla</a></li>
@@ -29,7 +29,7 @@
                                 <li><a href="#">Sapaniel</a></li>
                             </ul>
                         </li>
-                        <li><a href="#log">Log</a>
+                        <li id="log"><a href="#log">Log</a>
                             <ul class="dropdown">
                                 <li><a href="#">sub-1</a></li>
                                 <li><a href="#">sub-2</a></li>
@@ -179,5 +179,7 @@
                 </div>
             </section>
         </footer>
+
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
     </body>
 </html>

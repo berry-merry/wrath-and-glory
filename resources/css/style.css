@@ -217,18 +217,17 @@ nav {
 
 .sticky .main-nav-box li {
     background: #fff;
-    transition: none;
-    
+    transition: none; 
 }
 
 .sticky .dropdown {
     box-shadow: 0.2px 0.2px 0.1px #a7b1bd;
 }
 
+
 .sticky .main-nav-box li a:link,
 .sticky .main-nav-box li a:visited {
     color: #576574;
-    background: #fff;
 } 
 
 

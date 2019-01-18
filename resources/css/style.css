@@ -193,6 +193,16 @@ nav {
     background-color: #ff9f43;
 }
 
+/****** MBILE NAVI **************/
+.mobile-nav-icon {
+    color: #fff;
+    float: right;
+    cursor: pointer;
+    display: none;
+    font-size: 200%;
+}
+
+
 /*--------- STICKY NAVI --------------*/
 
 .sticky {
@@ -201,20 +211,21 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    box-shadow: 0.3px 0.3px 0.3px #a7b1bd;
+    box-shadow: 0.2px 0.2px 0.1px #a7b1bd;
     z-index: 9999;  /* always on top */
 } 
 
 .sticky .main-nav-box li {
     background: #fff;
-    box-shadow: 0.3px 0.3px 0.3px #a7b1bd
+    box-shadow: 0.2px 0.2px 0.1px #a7b1bd;
+    transition: none;
 }
 
-#gilead {
+.sticky #gilead-btn {
     box-shadow: 0.3px 0.3px  #a7b1bd
 }
 
-#log {
+.sticky #log-btn {
     box-shadow: 0.05px 0.3px 0.5px #a7b1bd
 }
 

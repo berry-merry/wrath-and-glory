@@ -8,3 +8,16 @@ $(document).ready(function() {
         }
     }, {offset: '60px'});
 })
+
+$('.js--mobile-nav-icon').click(function() {
+    
+    const nav = $('.js--main-nav-box');
+    const icon = $('.js--mobile-nav-icon ion-icon');
+    nav.slideToggle(200);
+    
+    if (icon.attr('name') == 'menu') {
+        icon.attr('name', 'close');
+    } else {
+        icon.attr('name', 'menu');
+    }
+});

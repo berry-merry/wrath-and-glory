@@ -150,8 +150,8 @@ nav {
 
 .main-nav-box li {
 	color: #fff;
+    display: block;
     background: #576574;
-	display: block;
 	float: left;
 	padding: 1rem;
 	position: relative;
@@ -193,7 +193,7 @@ nav {
     background-color: #ff9f43;
 }
 
-/****** MBILE NAVI **************/
+/****** MOBILE NAVI **************/
 .mobile-nav-icon {
     color: #fff;
     float: right;
@@ -217,16 +217,12 @@ nav {
 
 .sticky .main-nav-box li {
     background: #fff;
-    box-shadow: 0.2px 0.2px 0.1px #a7b1bd;
     transition: none;
+    
 }
 
-.sticky #gilead-btn {
-    box-shadow: 0.3px 0.3px  #a7b1bd
-}
-
-.sticky #log-btn {
-    box-shadow: 0.05px 0.3px 0.5px #a7b1bd
+.sticky .dropdown {
+    box-shadow: 0.2px 0.2px 0.1px #a7b1bd;
 }
 
 .sticky .main-nav-box li a:link,

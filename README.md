@@ -10,4 +10,6 @@ The subsequent features will include a campaign log and a dramatic personae page
 Eventually the project will consist of a dynamic front-end part and back-end part written in Node.js.
 
 And remember:
+
+
 ![WH40](http://i68.tinypic.com/yci05.png)
